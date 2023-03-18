@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textSize="34sp"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_tempo_inicial"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/nameApp"
+        app:layout_constraintStart_toStartOf="@+id/nameApp"
+        app:layout_constraintTop_toBottomOf="@+id/nameApp"
+
+        />
+
+    <EditText
+        android:id="@+id/TF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_tempo_Final"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/TI"
+        app:layout_constraintStart_toStartOf="@+id/TI"
+        app:layout_constraintTop_toBottomOf="@+id/TI"
+
+        />
+
+    <EditText
+        android:id="@+id/VI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_velocidade_inicial"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/TF"
+        app:layout_constraintStart_toStartOf="@+id/TF"
+        app:layout_constraintTop_toBottomOf="@+id/TF"
+
+        />
+
+    <EditText
+        android:id="@+id/VF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_velocidade_Final"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/VI"
+        app:layout_constraintStart_toStartOf="@+id/VI"
+        app:layout_constraintTop_toBottomOf="@+id/VI"
+
+        />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="1"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VF"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

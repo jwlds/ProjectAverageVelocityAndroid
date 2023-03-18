@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Velocidade Média</string>
+    <string name="hint_tempo_inicial">Tempo Inicial</string>
+    <string name="hint_tempo_Final">Tempo Final</string>
+    <string name="hint_velocidade_inicial">Velocidade Inicial</string>
+    <string name="hint_velocidade_Final">Velocidade Final</string>
+</resources>
